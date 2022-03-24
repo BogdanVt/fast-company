@@ -14,11 +14,11 @@ const Users = () => {
             return (number < 10 && number % 10 > 1 && number % 10 < 5  ) ? 'человека' :  'человек';
         }
         if (manyUsers > 0){
-            return <h2>{manyUsers} {correctWord(manyUsers)} с тобой тусанут сегодня</h2>
+            return <h2><span className="badge bg-primary">{manyUsers} {correctWord(manyUsers)} с тобой тусанут сегодня</span></h2>
         }else {
             let table = document.querySelector("table")
             table.classList.add('hide')
-               return <h2 className="badge bg-danger">Никто с тобой не тусанет</h2>
+            return <h2><span className="badge bg-danger">Никто с тобой не тусанет</span></h2>
         }
     }
 

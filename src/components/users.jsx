@@ -4,66 +4,55 @@ const Users = () => {
     const [users, setUsers] = useState(api.users.fetchAll())
 
 
-    const handleDelete = (userId) => {
-        setUsers(prevState => prevState.filter(user => user._id !== userId))
-    }
+    const handleDelete = (userId) => setUsers(users.filter((user)=>user._id !==userId));
 
-    const renderPhrase = () => {
-        let manyUsers = users.length
-        const correctWord = (number) => {
-            return (number < 10 && number % 10 > 1 && number % 10 < 5  ) ? 'человека' :  'человек';
-        }
-        if (manyUsers > 0){
-            return <h2><span className="badge bg-primary">{manyUsers} {correctWord(manyUsers)} с тобой тусанут сегодня</span></h2>
-        }else {
-            let table = document.querySelector("table")
-            table.classList.add('hide')
-            return <h2><span className="badge bg-danger">Никто с тобой не тусанет</span></h2>
-        }
+
+    const renderPhrase = (number) => {
+        const lastOne = Number(number.toString().slice(-1))
+        if(number>4 && number<15) return "человек тусанет";
+        if([2,3,4].indexOf(lastOne)>=0) return "человека тусанут";
+
+        return "человек тусанет"
     }
 
 
    return (
-       <>
-           {renderPhrase()}
-           <table className="table">
-               <thead>
-               <tr>
-                   <th key={2} className="col">Имя</th>
-                   <th key={3} className="col">Качества</th>
-                   <th key={4} className="col">Профессия</th>
-                   <th key={5} className="col">Встретился,раз</th>
-                   <th key={6} className="col">Оценка</th>
-                   <th key={7} className="col"> </th>
+    <>
+        <h2>
+            <span className={"badge bg-"+(users.length>0?"primary":"danger")}>
+                {users.length>0
+                    ?`${users.length} ${renderPhrase(users.length)} с тобой сегодня`
+                    :"Никто с тобой не тусанет"}
+            </span>
+        </h2>
+        {users.length>0&&
+        <table className="table">
+           <thead>
+           <tr>
+               <th scope="col">Имя</th>
+               <th scope="col">Качества</th>
+               <th scope="col">Професия</th>
+               <th scope="col">Встретился,раз</th>
+               <th scope="col">Оценка</th>
+               <th />
+
+           </tr>
+           </thead>
+           <tbody>
+           {users.map((user)=>(
+               <tr key={user._id}>
+               <td>{user.name}</td>
+               <td>{user.qualities.map(item=><span className={"badge m-1 bg-"+item.color} key={item._id}>{item.name}</span>)}</td>
+               <td>{user.profession.name}</td>
+               <td>{user.completedMeetings}</td>
+               <td>{user.rate}</td>
+               <td><button className={"btn btn-danger"} onClick={()=>handleDelete(user._id)}>delete</button></td>
                </tr>
-               </thead>
-               <tbody>
-                { users.map((user) => {
-                   return  <tr key={user._id}>
-                       <th>{user.name}</th>
-                       <th>
-                           {user.qualities.map((x)=>{
-                                   let classes = `badge m-1 bg-${x.color}`
-                                   return (
-                                       <span key={x._id} className={classes}>
-                                        {x.name}
-                                       </span>)
-                           })}
-                       </th>
-                       <th>{user.profession.name}</th>
-                       <th>{user.completedMeetings}</th>
-                       <th>{user.rate}/5</th>
-                       <th>
-                           <button className="btn btn-danger"
-                                   onClick={()=>handleDelete(user._id)}
-                           >delete
-                           </button>
-                       </th>
-                   </tr>
-               })}
-               </tbody>
-           </table>
-       </>
+           ))}
+           </tbody>
+       </table>
+        }
+    </>
    )
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
+const Qualitie = ({ color, name }) => {
+    return (
+        <span className={"badge m-1 bg-" + color}>
+            {name}
+        </span>
+    );
+};
 
-const Qualitie = (props) => {
-  return (
-      <>
-          <td>{props.user.qualities.map(item=><span className={"badge m-1 bg-"+item.color} key={item._id}>{item.name}</span>)}</td>
-      </>
-  )
-}
-export default Qualitie
+export default Qualitie;

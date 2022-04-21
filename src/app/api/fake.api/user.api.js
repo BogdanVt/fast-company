@@ -147,7 +147,7 @@ const fetchAll = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
             resolve(users);
-        }, 1000);
+        }, 500);
     });
 
 export default {

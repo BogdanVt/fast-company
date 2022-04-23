@@ -48,7 +48,6 @@ const Users = () => {
         setCurrentPage(pageIndex);
     };
     const handleSort = (item) => {
-        console.log(item);
         setSortBy(item);
     };
 

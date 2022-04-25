@@ -9,6 +9,16 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
             onSort({ path: item, order: "asc" });
         }
     };
+    const renderSortArrow = (selectedSort, currentPath) => {
+        if (selectedSort.path === currentPath) {
+            if (selectedSort.order === "asc") {
+                return <i className="bi bi-caret-down-fill"></i>;
+            } else {
+                return <i className="bi bi-caret-up-fill"></i>;
+            }
+        }
+        return null;
+    };
     return <thead>
     <tr>
         { Object.keys(columns).map((column) => (
@@ -19,15 +29,9 @@ const TableHeader = ({ onSort, selectedSort, columns }) => {
                         : undefined
                 }
                 { ...{ role: columns[column].path && "button" } }
-                scope="col">
-                    { selectedSort.path === columns[column].path
-                    ? selectedSort.order === "asc"
-                    ? (<i className="bi bi-caret-down-fill"></i>)
-                    : (selectedSort.order === "desc")
-                        ? (<i className="bi bi-caret-up-fill"></i>)
-                        : null
-                : null}
-                { columns[column].name }
+                scope="col"
+            >
+                { columns[column].name } { renderSortArrow(selectedSort, columns[column].path) }
             </th>
         )) }
     </tr>

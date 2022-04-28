@@ -7,6 +7,8 @@ import GroupList from "./groupList";
 import SearchStatus from "./searchStatus";
 import UsersTable from "./usersTable";
 import _ from "lodash";
+import { useParams } from "react-router-dom";
+import UserPage from "./userPage";
 
 const Users = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -50,65 +52,73 @@ const Users = () => {
     const handleSort = (item) => {
         setSortBy(item);
     };
+    const params = useParams();
+    const userId = params;
+    return <>
+        { userId
+            ? <UserPage id={userId} users={users} />
+            : ({
+                if(users) {
+                    const filteredUsers = selectedProf
+                        ? users.filter(
+                            (user) =>
+                                JSON.stringify(user.profession) ===
+                                JSON.stringify(selectedProf)
+                        )
+                        : users;
 
-    if (users) {
-        const filteredUsers = selectedProf
-            ? users.filter(
-                (user) =>
-                    JSON.stringify(user.profession) ===
-                    JSON.stringify(selectedProf)
-            )
-            : users;
+                    const count = filteredUsers.length;
+                    const sortedUsers = _.orderBy(filteredUsers, [sortBy.path], [sortBy.order]);
+                    const usersCrop = paginate(sortedUsers, currentPage, pageSize);
+                    const clearFilter = () => {
+                        setSelectedProf();
+                    };
 
-        const count = filteredUsers.length;
-        const sortedUsers = _.orderBy(filteredUsers, [sortBy.path], [sortBy.order]);
-        const usersCrop = paginate(sortedUsers, currentPage, pageSize);
-        const clearFilter = () => {
-            setSelectedProf();
-        };
-
-        return (
-            <div className="d-flex">
-                { professions && (
-                    <div className="d-flex flex-column flex-shrink-0 p-3">
-                        <GroupList
-                            selectedItem={ selectedProf }
-                            items={ professions }
-                            onItemSelect={ handleProfessionSelect }
-                        />
-                        <button
-                            className="btn btn-secondary mt-2"
-                            onClick={ clearFilter }
-                        >
-                            { " " }
-                            Очистить
-                        </button>
-                    </div>
-                ) }
-                <div className="d-flex flex-column">
-                    <SearchStatus length={ count }/>
-                    { count > 0 && (
-                        <UsersTable
-                            selectedSort={ sortBy }
-                            onSort={ handleSort }
-                            users={ usersCrop }
-                            onDelete={ handleDelete }
-                            onToggleBookMark={ handleToggleBookMark }
-                        />
-                    ) }
-                    <div className="d-flex justify-content-center">
-                        <Pagination
-                            itemsCount={ count }
-                            pageSize={ pageSize }
-                            currentPage={ currentPage }
-                            onPageChange={ handlePageChange }
-                        />
-                    </div>
-                </div>
-            </div>
-        );
-    }
-    return "loading...";
+                    return (
+                        <div className="d-flex">
+                            { professions && (
+                                <div className="d-flex flex-column flex-shrink-0 p-3">
+                                    <GroupList
+                                        selectedItem={ selectedProf }
+                                        items={ professions }
+                                        onItemSelect={ handleProfessionSelect }
+                                    />
+                                    <button
+                                        className="btn btn-secondary mt-2"
+                                        onClick={ clearFilter }
+                                    >
+                                        { " " }
+                                        Очистить
+                                    </button>
+                                </div>
+                            ) }
+                            <div className="d-flex flex-column">
+                                <SearchStatus length={ count }/>
+                                { count > 0 && (
+                                    <UsersTable
+                                        selectedSort={ sortBy }
+                                        onSort={ handleSort }
+                                        users={ usersCrop }
+                                        onDelete={ handleDelete }
+                                        onToggleBookMark={ handleToggleBookMark }
+                                    />
+                                ) }
+                                <div className="d-flex justify-content-center">
+                                    <Pagination
+                                        itemsCount={ count }
+                                        pageSize={ pageSize }
+                                        currentPage={ currentPage }
+                                        onPageChange={ handlePageChange }
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    );
+                }
+                return "loading..."
+            })
+        }
+    </>
 };
 Users.propTypes = {
     users: PropTypes.array

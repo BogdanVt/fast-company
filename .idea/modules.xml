@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/fast-company-new-userpage-ui-final.iml" filepath="$PROJECT_DIR$/.idea/fast-company-new-userpage-ui-final.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/before-hw-hooks.iml" filepath="$PROJECT_DIR$/.idea/before-hw-hooks.iml" />
+>>>>>>> 9da33f6b79b7dcf4f7b55dbdd848eda6a442934e
     </modules>
   </component>
 </project>

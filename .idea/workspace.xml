@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abc01719-5a4d-4982-afd6-551f5cb5cdee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/before-hw-hooks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/comments.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/comments.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/professions.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/Card.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/backButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/backButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/blockQuote.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/bookmark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/bookmark.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/collapse.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/addCommentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/comments/commentsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/container.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/divider.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/multiSelectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/multiSelectField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/selectField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/selectField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textAreaField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textAreaField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/groupList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/groupList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/table/tableBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/tableBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/table/tableHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/table/tableHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/typografy/smallTitle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/typografy/subtitle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/typografy/title.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/children/reactChildrenExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/cloneElement/cloneElementExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/hoc/hocExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/hoc/someComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/hoc/withLogin.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/hoc/withPropsStyles.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/memo/memoDependencyFunctionExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/memo/memoWithUseCallbackExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/useCallback/useCallBackExample.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/useMemo/complexCalculate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/useRef/prevState.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/useRef/programmableActions.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/examples/useRef/renderCount.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/exercises/childrenExercise.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/exercises/hocExercise.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/exercises/simpleComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/exercises/useRefExercise.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/exercises/withFunctions.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/editUserPage/editUserPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/userPage/userPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/page/usersListPage/usersListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/meetingsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/meetingsCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/navBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/qualitiesList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualities/quality.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualities/quality.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualitiesCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualitiesCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/searchStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/searchStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/userCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/usersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/usersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/cloneElement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/hoc.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/memo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/reactChildren.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/useCallback.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/useMemo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/useRef.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/displayDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/displayDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29trgvVpIJZsyEt11dOVpIvSdS8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abc01719-5a4d-4982-afd6-551f5cb5cdee" name="Changes" comment="" />
+      <created>1653943337753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653943337753</updated>
+      <workItem from="1653943338902" duration="538000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -15,11 +15,7 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
     };
     return (
         <div className="mb-4">
-<<<<<<< HEAD
             <label htmlFor={name}>{label}</label>
-=======
-            <label htmlFor={name}> {label}</label>
->>>>>>> 9da33f6b79b7dcf4f7b55dbdd848eda6a442934e
             <div className="input-group has-validation">
                 <input
                     type={showPassword ? "text" : type}
@@ -29,10 +25,6 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
                     onChange={handleChange}
                     className={getInputClasses()}
                 />
-<<<<<<< HEAD
-=======
-
->>>>>>> 9da33f6b79b7dcf4f7b55dbdd848eda6a442934e
                 {type === "password" && (
                     <button
                         className="btn btn-outline-secondary"
@@ -46,11 +38,7 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
                         ></i>
                     </button>
                 )}
-<<<<<<< HEAD
                 {error && <div className="invalid-feedback">{error}</div>}
-=======
-                {error && <div className="invalid-feedback ">{error}</div>}
->>>>>>> 9da33f6b79b7dcf4f7b55dbdd848eda6a442934e
             </div>
         </div>
     );

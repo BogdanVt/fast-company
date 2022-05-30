@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import API from "../../../api";
+import React, { useState, useEffect } from "react";
+import api from "../../../api";
 import SelectField from "../form/selectField";
 import TextAreaField from "../form/textAreaField";
 import { validator } from "../../../utils/validator";
@@ -28,15 +28,17 @@ const AddCommentForm = ({ onSubmit }) => {
             }
         }
     };
-
     const validate = () => {
         const errors = validator(data, validatorConfig);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
     useEffect(() => {
-        API.users.fetchAll().then(setUsers);
+        api.users.fetchAll().then(setUsers);
     }, []);
+    useEffect(() => {
+        validate();
+    }, [data]);
     const clearForm = () => {
         setData(initialData);
         setErrors({});
@@ -51,7 +53,7 @@ const AddCommentForm = ({ onSubmit }) => {
     const arrayOfUsers =
         users &&
         Object.keys(users).map((userId) => ({
-            name: users[userId].name,
+            label: users[userId].name,
             value: users[userId]._id
         }));
     return (
@@ -74,12 +76,15 @@ const AddCommentForm = ({ onSubmit }) => {
                     error={errors.content}
                 />
                 <div className="d-flex justify-content-end">
-                    <button className="btn btn-primary">Опубликовать</button>
+                    <button className="btn btn-primary">
+                        Опубликовать
+                    </button>
                 </div>
             </form>
         </div>
     );
 };
+
 AddCommentForm.propTypes = {
     onSubmit: PropTypes.func
 };

@@ -62,6 +62,7 @@ const add = (data) =>
   });
 
 const remove = (id) =>
+<<<<<<< HEAD
   new Promise((resolve) => {
     window.setTimeout(function () {
       const comments = JSON.parse(localStorage.getItem("comments"));
@@ -72,6 +73,18 @@ const remove = (id) =>
       resolve(id);
     }, 200);
   });
+=======
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            const comments = JSON.parse(localStorage.getItem("comments"));
+            const newComments = comments.filter((x) => x._id !== id);
+            // console.log(id);
+            // console.log(newComments);
+            localStorage.setItem("comments", JSON.stringify(newComments));
+            resolve(id);
+        }, 200);
+    });
+>>>>>>> 65ebeed23991602076a54853ff2fbf2199141b8c
 export default {
   fetchAll,
   fetchCommentsForUser,

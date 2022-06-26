@@ -2,6 +2,7 @@ import React from "react";
 import useMockData from "../utils/mockData";
 
 const Main = () => {
+<<<<<<< HEAD
   const { error, initialize, progress, status } = useMockData();
   const handleClick = () => {
     initialize();
@@ -21,6 +22,9 @@ const Main = () => {
       </button>
     </div>
   );
+=======
+    return <h1>Main</h1>;
+>>>>>>> 65ebeed23991602076a54853ff2fbf2199141b8c
 };
 
 export default Main;

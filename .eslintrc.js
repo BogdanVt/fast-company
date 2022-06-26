@@ -8,6 +8,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+<<<<<<< HEAD
     ecmaVersion: 13,
     sourceType: "module",
   },
@@ -32,4 +33,25 @@ module.exports = {
       },
     ],
   },
+=======
+    extends: ["plugin:react/recommended", "standard"],
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        },
+        ecmaVersion: "latest",
+        sourceType: "module"
+    },
+    plugins: ["react"],
+    rules: {
+        indent: ["error", 4],
+        semi: [2, "always"],
+        "space-before-function-paren": [
+            "error",
+            { anonymous: "always", named: "never" }
+        ],
+        "multiline-ternary": ["off"],
+        quotes: ["error", "double", { allowTemplateLiterals: true }]
+    }
+>>>>>>> 65ebeed23991602076a54853ff2fbf2199141b8c
 };

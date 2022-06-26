@@ -4,10 +4,22 @@ import LoginForm from "../components/ui/loginForm";
 import RegisterForm from "../components/ui/registerForm";
 
 const Login = () => {
+<<<<<<< HEAD
   const { type } = useParams();
   const [formType, setFormType] = useState(
     type === "register" ? type : "login"
   );
+=======
+    const { type } = useParams();
+    const [formType, setFormType] = useState(
+        type === "register" ? type : "login"
+    );
+    const toggleFormType = () => {
+        setFormType((prevState) =>
+            prevState === "register" ? "login" : "register"
+        );
+    };
+>>>>>>> 65ebeed23991602076a54853ff2fbf2199141b8c
 
   const toggleFormType = () => {
     setFormType((prevState) =>
